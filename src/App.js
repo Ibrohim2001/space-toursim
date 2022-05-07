@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import {Helmet} from "react-helmet";
+import { Switch, Route } from 'react-router-dom';
+import Home from './routes/home/Home';
+import Destination from './routes/destination/Destination';
+import Crew from './routes/crew/Crew';
+import Technology from './routes/technology/Technology';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Helmet>
+        <meta charSet="utf-8"/>
+        <meta name="description" content="Helmet application" />
+        <title>Space Toursim</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
+      <Switch>
+        <Route exact path='/'>
+          <Home/>
+        </Route>
+        <Route path='/destinations'>
+          <Destination/>
+        </Route>
+        <Route path='/crew'>
+          <Crew/>
+        </Route>
+        <Route path='/technology'>
+          <Technology/>
+        </Route>
+      </Switch>
     </div>
   );
 }
