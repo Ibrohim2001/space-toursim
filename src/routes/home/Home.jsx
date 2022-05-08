@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <div className='home'>
       <Navbar/>
-      <div>
+      <div className="home_container">
         { home_data.map((home_item, index) => 
-         <div  className="home_container" key={index}>
+         <div key={index}>
           <div className="left">
             <h2 className='font-ff-one'>{home_item.subheading}</h2>
             <h1 className='font-ff-two'>{home_item.heading}</h1>

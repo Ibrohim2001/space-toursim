@@ -186,7 +186,7 @@
   }
   .home_container {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
   .home_container .left > h2 {
     letter-spacing: 2.7px;
@@ -201,8 +201,9 @@
     font-size: 0.9rem;
   }
   .home_container .right {
-    margin-left: 0;
     width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
   }
   .right .explore_btn {
     width: 150px;

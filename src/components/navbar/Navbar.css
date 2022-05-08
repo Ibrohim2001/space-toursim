@@ -100,10 +100,9 @@
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 2rem;
+    top: 0.5rem;
     left: 0;
     z-index: 2;
-    /* background-color: red; */
   }
   .logo {
     width: 40px;
@@ -141,10 +140,8 @@
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    /* backdrop-filter: blur(81.5485px); */
-    /* filter: blur(2px); */
-    list-style: none;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(81.5485px);
     overflow: hidden;
     position: absolute;
     top: -2rem;
@@ -152,32 +149,34 @@
     z-index: 3;
   }
   .nav_menu .nav_item {
-    /* width: 100%; */
+    width: 100%;
     margin: 1rem 0;
     height: 48px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 1rem;
   }
   .nav_item .nav_link {
+    width: 100%;
+    padding-left: 1rem;
     color: var(--light-color);
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
     text-align: center;
+    position: relative;
   }
   .activeLink {
-    position: relative;
+    position: absolute;
   }
   .activeLink::before {
     content: '';
-    width: 2px;
+    width: 3px;
     height: 40px;
     background-color: var(--light-color);
     position: absolute;
     top: -10px;
-    left: 286%;
+    left: 98.5%;
   }
   .nav_item .nav_link span {
     display: inline-block;
