@@ -16,7 +16,7 @@ const Home = () => {
             <p className='font-ff-one paragraph'>{home_item.home_text}</p>
           </div>
           <div className="right">
-            <button className='explore_btn font-ff-two heading-four'>Explore</button>
+            <button className='explore_btn font-ff-two'>Explore</button>
           </div>
         </div>
         )}
