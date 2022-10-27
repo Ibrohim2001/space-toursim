@@ -3,8 +3,7 @@
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
-  height: auto;
-  min-height: 100vh;
+  height: 100vh;
   background: url('../../assets/img/crew/background-crew-desktop.jpg');
   background-size: cover;
   background-position: top left;
@@ -13,8 +12,7 @@
 .crew_container {
   width: 80%;
   max-width: 1440px;
-  height: 100vh;
-  margin: 6rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   color: var(--light-color);
 }
 .crew_title {
@@ -29,7 +27,7 @@
 
 .crew_content {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -39,10 +37,9 @@
   height: 100%;
   display: grid;
   place-content: center;
-  padding-top: 5rem;
 }
 .crew_text {
-  height: 400px;
+  height: 300px;
 }
 .crew_text h2 {
   text-transform: uppercase;
@@ -62,16 +59,15 @@
 }
 .crew_content .right {
   width: 100%;
-  height: 70vh;
-  margin-top: 1rem;
+  height: 50vh;
 }
 .crew_content .right .crew_img{
   width: 500px;
-  height: 80vh;
+  height: 100%;
 }
 .crew_img img {
   width: 100%;
-  height: 80vh;
+  height: 100%;
   object-fit: contain;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -98,11 +94,15 @@
 
 @media (max-width: 768px) {
   .crew {
+    height: auto;
+    min-height: 100vh;
     background: url('../../assets/img/crew/background-crew-tablet.jpg') top/left no-repeat;
     background-size: cover;
   }
   .crew_container {
     height: auto;
+    margin-top: 4rem;
+    min-height: 100vh;
   }  
   .crew_container .crew_title {
     font-size: 20px;
@@ -138,7 +138,7 @@
   }
   .crew_content .right .crew_img{
     width: 500px;
-    height: 450px;
+    height: 400px;
     margin: 0 auto;
   }
   .crew_img img {

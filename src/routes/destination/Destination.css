@@ -13,14 +13,14 @@
 .destination_container {
   width: 80%;
   max-width: 1440px;
-  height: 110vh;
-  margin: 4rem auto 0 auto;
+  height: 90vh;
+  margin: 3rem auto 0 auto;
   color: var(--light-color);
 }
 .destination_content {
   height: 90%;
   margin: 0 0 1rem 0;
-  padding-top: 4rem;
+  padding-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
