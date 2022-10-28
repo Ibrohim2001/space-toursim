@@ -1,27 +1,23 @@
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './routes/home/Home';
 import Destination from './routes/destination/Destination';
 import Crew from './routes/crew/Crew';
 import Technology from './routes/technology/Technology';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
     <div className="app">
-      <Switch>
-        <Route exact path='/'>
-          <Home/>
-        </Route>
-        <Route path='/destinations'>
-          <Destination/>
-        </Route>
-        <Route path='/crew'>
-          <Crew/>
-        </Route>
-        <Route path='/technology'>
-          <Technology/>
-        </Route>
-      </Switch>
+      <Router>
+        {/* <Navbar/> */}
+        <Routes>
+          <Route exact path='/' element={<Home/>}/>
+          <Route path='/destinations' element={<Destination/>}/>
+          <Route path='/crew' element={<Crew/>}/>
+          <Route path='/technology' element={<Technology/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
